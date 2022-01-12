@@ -1,0 +1,14 @@
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
+
+.page-header {
+  @include flex-center();
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    color: $lightText;
+  }
+}

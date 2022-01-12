@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+@import './Styles/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: $backgroudCol;
+  flex-grow: 1;
+  padding: 0;
+
+}
