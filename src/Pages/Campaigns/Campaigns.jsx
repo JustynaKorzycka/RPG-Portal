@@ -2,10 +2,11 @@ import React from 'react'
 import Header from '../../Components/Header/Header'
 import headerImg from '../../Assets/img/headers/header1.jpg'
 import { Container } from 'react-bootstrap'
-import CampaignCard from './CampaignCard'
+import CampaignCard from '../../Components/CampaignCard/CampaignCard'
 import { useDispatch, useSelector } from 'react-redux';
 import useFetch from '../../Hooks/useFetch';
 import { gameMastersFetching } from '../../Redux/Actions';
+import './Campaigns.scss'
 
 const Campaigns = ({ campLoading }) => {
   const dispatch = useDispatch();

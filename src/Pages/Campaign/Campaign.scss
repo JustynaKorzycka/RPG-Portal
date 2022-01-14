@@ -1,0 +1,45 @@
+@import '../../Styles/variables';
+
+.single-campaign {
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    p.full-desc {
+      flex-basis: 65%;
+    }
+
+    .divider {
+      height: 100px;
+      width: 2px;
+      background-color: $secAccent;
+    }
+
+    .info {
+      flex-basis: 30%;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .master {
+        margin-bottom: 5%;
+
+        .avatar {
+          max-width: 40%;
+        }
+
+        h6 {
+          margin-left: 6%;
+        }
+      }
+    }
+  }
+
+  .join-form {
+    .title {
+      text-align: center;
+    }
+  }
+
+}

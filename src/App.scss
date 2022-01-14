@@ -60,5 +60,16 @@ a {
 .main-container {
   flex-grow: 1;
   padding: 0;
+}
 
+.post .container {
+  background-color: #fff;
+  padding: 5%;
+}
+
+@media screen and (min-width: 1200px) {
+  .post .container {
+    background-color: #fff;
+    padding: 2rem 5rem;
+  }
 }

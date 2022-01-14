@@ -1,0 +1,35 @@
+ .card {
+   height: 400px;
+
+   .card-img {
+     max-height: 40%;
+
+     img {
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       object-position: center;
+     }
+   }
+
+   .card-body {
+     flex-basis: 60%;
+     padding: 1.5rem;
+
+     *>div {
+       margin: 10px 8px;
+     }
+
+     .card-text {
+       display: -webkit-box;
+       overflow: hidden;
+       -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical;
+     }
+   }
+
+   .card-title {
+     text-align: center;
+   }
+
+ }
