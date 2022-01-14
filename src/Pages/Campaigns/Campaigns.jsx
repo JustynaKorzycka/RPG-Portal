@@ -1,32 +1,32 @@
 import React from 'react'
 import Header from '../../Components/Header/Header'
 import headerImg from '../../Assets/img/headers/header1.jpg'
-import { useSelector } from 'react-redux'
-import { Container, Card } from 'react-bootstrap'
-import useUploadImages from '../../Hooks/useImageUpload'
+import { Container } from 'react-bootstrap'
+import CampaignCard from './CampaignCard'
+import { useDispatch, useSelector } from 'react-redux';
+import useFetch from '../../Hooks/useFetch';
+import { gameMastersFetching } from '../../Redux/Actions';
 
+const Campaigns = ({ campLoading }) => {
+  const dispatch = useDispatch();
+  const campaigns = useSelector(state => state.campaigns)
+  
+  const { data, loading } = useFetch('http://localhost:3000/users');
 
-const Campaigns = () => {
-  const campaigns = useSelector(state => state.campaigns);
-  const images = campaigns.map(campaign => `../../Assets/img/campaigns/${campaign.image}`);
-  const uploadImages = useUploadImages(images);
+  if (data && !loading) {
+    dispatch(gameMastersFetching(data.filter(item=>item.userType==='gameMaster')));  
+  }
+
   return (
     <>
-    <Header title='All Campaigns' image={headerImg} />
+    <Header title='All Campaigns' image={ headerImg } />
       <Container>
-        
-        {campaigns.map(campaign => {
-          // const src = `../../Assets/img/campaigns/${campaign.image}`;
-          return (
-            <Card className='campaign-card'>
-              {/* <Card.Img variant='top' src={require(src)} /> */}
-              <Card.Title>{ campaign.title }</Card.Title>
-            </Card>
-          )
-        })}
-            
-           
-        
+        {campLoading && 'loading...'}
+        {campaigns && 
+        <div className='campaigns-cards'>
+            {campaigns.map(campaign => <CampaignCard campaign={campaign} key={ campaign.id }/>)}
+          </div>
+        }
     </Container>
     </>
   )
