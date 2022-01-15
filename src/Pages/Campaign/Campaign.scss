@@ -3,8 +3,9 @@
 .single-campaign {
   .content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 5rem;
 
     p.full-desc {
@@ -12,9 +13,10 @@
     }
 
     .divider {
-      height: 100px;
-      width: 2px;
+      height: 2px;
+      width: 100%;
       background-color: $secAccent;
+      margin: 2rem;
     }
 
     .info {
@@ -42,4 +44,21 @@
     }
   }
 
+}
+
+@media screen and (min-width: 576px) {
+  .single-campaign {
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .divider {
+        width: 2px;
+        height: 100px;
+
+      }
+    }
+  }
 }

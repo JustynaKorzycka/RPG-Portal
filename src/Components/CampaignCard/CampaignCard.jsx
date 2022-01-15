@@ -9,7 +9,7 @@ import CampaignInfo from '../CampaignInfo/CampaignInfo';
 const CampaignCard = ({ campaign }) => {
   const gameMasters = useSelector(state => state.gameMasters);
   const curMaster = gameMasters.filter(master => master.id === campaign.gameMasterId);
-  const freePlaces = campaign.playersNumber - campaign.bookedPlaces;
+  const freePlaces = campaign.playersNumber - campaign.playersID.length;
   return (
     <Card>
       <div className="card-img">

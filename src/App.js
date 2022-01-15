@@ -9,6 +9,9 @@ import useFetch from './Hooks/useFetch';
 import { useDispatch } from 'react-redux';
 import { campaignsFetching } from './Redux/Actions';
 import Campaign from './Pages/Campaign/Campaign';
+import SignIn from './Pages/SignIn/SignIn';
+import { LogInProvider } from './Context/LogInContext';
+
 
 function App() {
   const dispatch = useDispatch();
@@ -21,15 +24,18 @@ function App() {
  
   return (
     <div className='wrapper'>
-      <Navigation />
-      <Container fluid className='main-container'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='campaigns' element={<Campaigns loading={loading} />} />
-          <Route path='campaigns/:campaignId' element={<Campaign />} />
-        </Routes>
-      </Container>
-      <Footer />
+      <LogInProvider>
+        <Navigation />
+        <Container fluid className='main-container'>
+          <Routes>
+            <Route path='/' element={ <Home /> } />
+            <Route path='campaigns' element={<Campaigns loading={ loading } />} />
+            <Route path='campaigns/:campaignId' element={ <Campaign /> } />
+            <Route path='signin' element={ <SignIn /> } />
+          </Routes>
+        </Container>
+          <Footer />
+      </LogInProvider>
     </div>
   );
 }
