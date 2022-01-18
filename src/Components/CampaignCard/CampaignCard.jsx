@@ -4,9 +4,10 @@ import { useSelector } from 'react-redux';
 import './CampaignCard.scss';
 import { NavLink } from 'react-router-dom';
 import CampaignInfo from '../CampaignInfo/CampaignInfo';
+import { selectGameMasters } from '../../Redux/gameMastersSlice'
 
 const CampaignCard = ({ campaign }) => {
-  const gameMasters = useSelector(state => state.gameMasters.value);
+  const gameMasters = useSelector(selectGameMasters).gameMasters;
   const curMaster = gameMasters.filter(master => master.id === campaign.gameMasterId);
   const freePlaces = campaign.playersNumber - campaign.playersID.length;
   return (

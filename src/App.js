@@ -5,22 +5,23 @@ import Campaigns from "./Pages/Campaigns/Campaigns";
 import Navigation from "./Components/Navigation/Navigation";
 import { Container } from 'react-bootstrap';
 import Footer from './Components/Footer/Footer';
-import useFetch from './Hooks/useFetch';
 import { useDispatch } from 'react-redux';
-import { fetchedCampaings } from './Redux/campaigns';
+import { getCampaigns } from './Redux/campaignsSlice';
+import { getGameMasters } from './Redux/gameMastersSlice';
 import Campaign from './Pages/Campaign/Campaign';
 import SignIn from './Pages/SignIn/SignIn';
 import { LogInProvider } from './Context/LogInContext';
+import { useEffect } from 'react';
 
 
 function App() {
   const dispatch = useDispatch();
 
-  const { data, loading } = useFetch('http://localhost:3000/campaigns');
-  if (data && !loading) {
-    dispatch(fetchedCampaings(data));  
-  }
-
+  useEffect(() => {
+    dispatch(getCampaigns())
+    dispatch(getGameMasters())
+  }, []);
+  
  
   return (
     <div className='wrapper'>
@@ -29,7 +30,7 @@ function App() {
         <Container fluid className='main-container'>
           <Routes>
             <Route path='/' element={ <Home /> } />
-            <Route path='campaigns' element={<Campaigns loading={ loading } />} />
+            <Route path='campaigns' element={<Campaigns />} />
             <Route path='campaigns/:campaignId' element={ <Campaign /> } />
             <Route path='signin' element={ <SignIn /> } />
           </Routes>

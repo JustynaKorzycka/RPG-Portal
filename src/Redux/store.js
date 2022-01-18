@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'; 
-import campaignsReducer from './campaigns';
-import gameMasterReducer from './gameMasters';
+import campaignsReducer from './campaignsSlice';
+import gameMasterReducer from './gameMastersSlice';
 
  const store = configureStore({
   reducer: {
-     campaigns: campaignsReducer,
+    campaigns: campaignsReducer,
     gameMasters: gameMasterReducer
   }
  })
