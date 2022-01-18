@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 import Footer from './Components/Footer/Footer';
 import useFetch from './Hooks/useFetch';
 import { useDispatch } from 'react-redux';
-import { campaignsFetching } from './Redux/Actions';
+import { fetchedCampaings } from './Redux/campaigns';
 import Campaign from './Pages/Campaign/Campaign';
 import SignIn from './Pages/SignIn/SignIn';
 import { LogInProvider } from './Context/LogInContext';
@@ -18,7 +18,7 @@ function App() {
 
   const { data, loading } = useFetch('http://localhost:3000/campaigns');
   if (data && !loading) {
-    dispatch(campaignsFetching(data));  
+    dispatch(fetchedCampaings(data));  
   }
 
  

@@ -1,6 +1,12 @@
-import { createStore } from 'redux';
-import allReducers from './Reducers'
+import { configureStore } from '@reduxjs/toolkit'; 
+import campaignsReducer from './campaigns';
+import gameMasterReducer from './gameMasters';
 
-const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+ const store = configureStore({
+  reducer: {
+     campaigns: campaignsReducer,
+    gameMasters: gameMasterReducer
+  }
+ })
 
 export default store;

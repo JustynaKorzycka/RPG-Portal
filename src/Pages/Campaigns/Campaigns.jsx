@@ -5,17 +5,17 @@ import { Container } from 'react-bootstrap'
 import CampaignCard from '../../Components/CampaignCard/CampaignCard'
 import { useDispatch, useSelector } from 'react-redux';
 import useFetch from '../../Hooks/useFetch';
-import { gameMastersFetching } from '../../Redux/Actions';
+import { fetchedGameMasters } from '../../Redux/gameMasters';
 import './Campaigns.scss'
 
 const Campaigns = ({ campLoading }) => {
   const dispatch = useDispatch();
-  const campaigns = useSelector(state => state.campaigns)
+  const campaigns = useSelector(state => state.campaigns.value)
   
   const { data, loading } = useFetch('http://localhost:3000/users');
 
   if (data && !loading) {
-    dispatch(gameMastersFetching(data.filter(item=>item.userType==='gameMaster')));  
+    dispatch(fetchedGameMasters(data.filter(item=>item.userType==='gameMaster')));  
   }
 
   return (
