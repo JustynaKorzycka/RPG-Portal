@@ -3,7 +3,7 @@
 
 .page-header {
   @include flex-center();
-  min-height: 20vh;
+  min-height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,8 +26,4 @@
   width: 100%;
   background-color: #000;
   opacity: 0.4;
-}
-
-.post .page-header {
-  margin-bottom: 0px;
 }

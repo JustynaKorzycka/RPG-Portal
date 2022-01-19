@@ -1,9 +1,13 @@
 import './HeroSec.scss'
-import heroImg from '../../Assets/img/heroImg.jpg'
 import  heroVideo  from '../../Assets/video/milk-way.mp4'
-
+import { addShowClass } from './showElement';
 
 const HeroSec = () => {
+  const showDesc = setTimeout(addShowClass, 800);
+  const stopShow = () => {
+    clearTimeout(showDesc);
+  }
+
   return (
     <div className='hero-section'>
       <video autoPlay loop muted src={heroVideo} type="video/mp4"></video>

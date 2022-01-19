@@ -22,10 +22,10 @@ const CampaignCard = ({ campaign }) => {
           { campaign.desc }  
         </Card.Text>
         {freePlaces > 0 &&
-          <NavLink to={`/campaigns/${campaign.name.toLowerCase().replace(' ', '')}-${campaign.id}`} state={{ data: { campaign: campaign, master: curMaster[0], freePlaces } }}><Button className='full-width'>Join now!</Button></NavLink>
+          <NavLink to={`/campaigns/${campaign.name.toLowerCase().replace(' ', '')}-${campaign.id}`} state={{ data: { campaign: campaign, master: curMaster[0], freePlaces } }}><Button className='full-width dark'>Join now!</Button></NavLink>
         }
         {freePlaces <= 0 &&
-          <Button className='full-width disabled' aria-disabled="true" tabIndex="-1" >Join now!</Button>
+          <Button className='full-width dark disabled' aria-disabled="true" tabIndex="-1" >Join now!</Button>
         }
       </Card.Body>
     </Card>

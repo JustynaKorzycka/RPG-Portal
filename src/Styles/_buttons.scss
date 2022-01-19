@@ -27,3 +27,16 @@
   color: $lightText;
   background-color: transparent;
 }
+
+.btn-primary {
+  background-color: $secAccent;
+  border: none;
+
+  &.disabled {
+    background-color: $secAccent;
+  }
+
+  &:hover {
+    background-color: $secAccent;
+  }
+}
