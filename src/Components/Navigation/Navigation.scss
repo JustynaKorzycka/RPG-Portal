@@ -1,9 +1,14 @@
 @import '../../Styles/variables';
 
 #nav {
-  background-color: $firstAcceny;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $backgroundCol2;
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
+  z-index: 1000;
+
 
   .navbar-brand {
     flex-basis: 30%;

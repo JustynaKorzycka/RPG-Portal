@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import './Styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 * {
   margin: 0;
@@ -13,14 +15,20 @@ html {
 
 h1 {
   font-size: 4rem;
+  font-family: 'Red Hat Display',
+    sans-serif;
 }
 
 h2 {
   font-size: 3rem;
+  font-family: 'Red Hat Display',
+    sans-serif;
 }
 
 h3 {
   font-size: 2.5rem;
+  font-family: 'Red Hat Display',
+    sans-serif;
 }
 
 h5 {
@@ -39,6 +47,24 @@ a {
   font-size: 1.4rem;
 }
 
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $scrollCol;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $firstAcceny;
+  border-radius: 100px;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 .btn {
   font-size: 1.4rem;
   padding: .6rem 1.5rem;
@@ -55,6 +81,7 @@ a {
   flex-direction: column;
   min-height: 100vh;
   background-color: $backgroudCol;
+  overflow: hidden;
 }
 
 .main-container {

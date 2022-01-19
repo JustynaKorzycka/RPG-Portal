@@ -1,19 +1,96 @@
 @import '../../Styles/variables';
 @import '../../Styles/mixins';
+@import '../../Styles/buttons';
+
+
 
 
 .hero-section {
-  @include flex-center();
-  flex-direction: column;
-  background: url('../../Assets/img/heroImg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 50vh;
+  height: 100vh;
+  position: relative;
+  color: $lightText;
 
-  h1 {
-    color: $lightText
+
+  video {
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-hero {
+      margin-bottom: 2rem;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    .right-hero {
+
+      p {
+        font-style: italic;
+        font-weight: 300;
+        margin: 2rem 0;
+
+        span {
+          display: block;
+          font-size: 1.2rem;
+          padding: 1rem 0;
+        }
+      }
+
+      button {
+        margin: 2rem 0;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    .hero-desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .left-hero {
+
+        h1 {
+          font-size: 8rem;
+          width: 75%;
+        }
+      }
+
+      .right-hero {
+        flex-basis: 75%;
+        margin-left: 5rem;
+
+        p {
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+
   }
 }
