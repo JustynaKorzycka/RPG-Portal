@@ -1,5 +1,14 @@
+@import '../../Styles/variables';
+
 .footer {
   min-height: 80px;
-  background-color: aqua;
-  margin-top: 50px;
+  color: $lightText;
+
+  .divider {
+    height: 2px;
+    width: 50%;
+    background-color: $secAccent;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
