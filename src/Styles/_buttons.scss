@@ -19,7 +19,7 @@
   width: 100%;
   letter-spacing: 3px;
   font-size: 1.8rem;
-  padding: 1.5rem
+  padding: .5rem;
 }
 
 .light {
@@ -39,4 +39,14 @@
   &:hover {
     background-color: $secAccent;
   }
+
+  &:active {
+    background-color: $secAccent;
+  }
+
+  &:focus {
+    background-color: $secAccent;
+    border-color: transparent;
+  }
+
 }

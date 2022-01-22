@@ -1,0 +1,22 @@
+.modal-header {
+  text-align: center;
+
+  .modal-title {
+    width: 100%;
+    font-size: 2rem;
+
+  }
+}
+
+.modal-dialog {
+  overflow: hidden;
+
+  .modal-footer {
+    justify-content: center;
+
+    a {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
