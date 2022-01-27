@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RPG-Portal/static/css/main.5b11a7a6.css",
+    "main.js": "/RPG-Portal/static/js/main.eafa0f4a.js",
+    "static/js/787.0ee94d1c.chunk.js": "/RPG-Portal/static/js/787.0ee94d1c.chunk.js",
+    "static/media/milk-way.mp4": "/RPG-Portal/static/media/milk-way.c4694c18ace0d6bd1195.mp4",
+    "static/media/evil-home.jpeg": "/RPG-Portal/static/media/evil-home.fa6565428580e3a3a074.jpeg",
+    "static/media/header1.jpg": "/RPG-Portal/static/media/header1.f308192efe42edbed2b1.jpg",
+    "index.html": "/RPG-Portal/index.html",
+    "main.5b11a7a6.css.map": "/RPG-Portal/static/css/main.5b11a7a6.css.map",
+    "main.eafa0f4a.js.map": "/RPG-Portal/static/js/main.eafa0f4a.js.map",
+    "787.0ee94d1c.chunk.js.map": "/RPG-Portal/static/js/787.0ee94d1c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b11a7a6.css",
+    "static/js/main.eafa0f4a.js"
+  ]
+}
