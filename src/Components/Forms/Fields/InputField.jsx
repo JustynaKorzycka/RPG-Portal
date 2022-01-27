@@ -16,7 +16,7 @@ const InputField = ({ formik, label, fieldType, fieldName, fieldPlaceholder }) =
       />
       </Col>
       </Row>
-         <Form.Text className="text-danger" column >
+         <Form.Text className="text-danger" >
           {formik.touched[fieldName] && formik.errors[fieldName] ? (
             <div className="text-danger">{formik.errors[fieldName]}</div>
           ) : null}

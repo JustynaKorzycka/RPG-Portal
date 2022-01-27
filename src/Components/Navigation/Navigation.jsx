@@ -9,7 +9,8 @@ import ButtonLogout from './ButtonLogout';
 const Navigation = () => {
   
   const user = useSelector(state => state.user);
-  console.log(user);
+
+
   return (
      <Navbar expand="sm" id='nav' variant='dark'>
         <Container>
@@ -19,7 +20,7 @@ const Navigation = () => {
             <Nav>
               <Link className='nav-link' to="/">Home</Link>
               <Link className='nav-link' to="campaigns">Campaigns</Link>   
-            {Object.keys(user).length === 0 || Object.keys(user.user).length === 0 ? <LoginModal />:  <ButtonLogout/>}
+            { !user.isLogged ? <LoginModal />:  <ButtonLogout/>}
         
             </Nav>
           </Navbar.Collapse>

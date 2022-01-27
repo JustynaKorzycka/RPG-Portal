@@ -8,7 +8,7 @@ import { selectGameMasters } from '../../Redux/gameMastersSlice'
 
 const CampaignCard = ({ campaign }) => {
   const gameMasters = useSelector(selectGameMasters).gameMasters;
-  const curMaster = gameMasters.filter(master => master.id === campaign.gameMasterId);
+  const curMaster = gameMasters.filter(master => master.id === campaign.gameMasterId)[0];
   const freePlaces = campaign.playersNumber - campaign.playersID.length;
   return (
     <Card>
@@ -17,12 +17,12 @@ const CampaignCard = ({ campaign }) => {
       </div>
       <Card.Body>
         <Card.Title>{ campaign.name }</Card.Title>
-        <CampaignInfo avatar={ curMaster[0].avatar } nick={ curMaster[0].nick } freePlaces={ freePlaces } />
+        <CampaignInfo avatar={ curMaster.avatar } nick={ curMaster.nick } freePlaces={ campaign.playersNumber - campaign.playersID.length } />
          <Card.Text>
           { campaign.desc }  
         </Card.Text>
         {freePlaces > 0 &&
-          <NavLink to={`/campaigns/${campaign.name.toLowerCase().replace(' ', '')}-${campaign.id}`} state={{ data: { campaign: campaign, master: curMaster[0], freePlaces } }}><Button className='full-width dark'>Join now!</Button></NavLink>
+          <NavLink to={`/campaigns/${campaign.name.toLowerCase().replace(' ', '')}-${campaign.id}`} state={{ data: { campaignId: campaign.id, master: curMaster } }}><Button className='full-width dark'>Join now!</Button></NavLink>
         }
         {freePlaces <= 0 &&
           <Button className='full-width dark disabled' aria-disabled="true" tabIndex="-1" >Join now!</Button>

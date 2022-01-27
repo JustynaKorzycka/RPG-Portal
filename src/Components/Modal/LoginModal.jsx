@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LogInForm from '../Forms/LogIn/LogInForm';
-import './LoginModal.scss';
+import './Modals.scss';
 
 const LoginModal = () => {
 
@@ -23,7 +23,7 @@ const LoginModal = () => {
         </Modal.Body>
         <Modal.Footer>
           <p> You do not have an account?</p>
-          <Link className='nav-link' to="signin" onClick={handleClose}>Sign in!</Link>
+          <Link className='nav-link' to="/signin" onClick={handleClose}>Sign in!</Link>
           
         </Modal.Footer>
     </Modal>

@@ -5,17 +5,16 @@ import { Container } from 'react-bootstrap'
 import CampaignCard from '../../Components/CampaignCard/CampaignCard'
 import { useSelector } from 'react-redux';
 import './Campaigns.scss'
-import { selectCampaigns } from '../../Redux/campaignsSlice'
 
 const Campaigns = () => {
 
-  const campaigns = useSelector(selectCampaigns);
+  const { campaigns, status } = useSelector(state => ({ ...state.campaigns }));
   
   return (
     <>
     <Header title='All Campaigns' image={ headerImg } />
       <Container>
-        {campaigns.status === 'pending' ? 'loading....' :  <div className='campaigns-cards'> {campaigns.campaings.map(campaign => <CampaignCard campaign={campaign} key={ campaign.id }/>)}</div>}      
+        {status === 'loading' ? 'loading....' :  <div className='campaigns-cards'> {campaigns.map(campaign => <CampaignCard campaign={campaign} key={ campaign.id }/>)}</div>}      
     </Container>
     </>
   )

@@ -4,11 +4,10 @@ import evil from '../../Assets/img/home/evil-home.jpeg';
 import './Home.scss';
 import { GiBroadsword } from "react-icons/gi";
 import { Container } from 'react-bootstrap';
-import { selectCampaigns } from '../../Redux/campaignsSlice'
-import { useSelector } from 'react-redux';
+
+
 
 const Home = () => {
-  const campaigns = useSelector(selectCampaigns);
   return (
     <div>
       <HeroSec />

@@ -1,7 +1,7 @@
 
 import { Button, Form} from 'react-bootstrap';
 import { useFormik } from 'formik';
-import { checkLogIn } from '../Helpers/checkLogIn';
+import { checkLogIn } from '../../Helpers/checkLogIn';
 import InputField from '../Fields/InputField';
 import { logInValidationSchema } from '../Validations/validationSchemes'
 import '../../../Styles/forms.scss'
@@ -19,7 +19,7 @@ const LogInForm = ({ setShow }) => {
     },
     validationSchema : logInValidationSchema,
     onSubmit: async(values, { resetForm }) => {
-      const loggedIn = await checkLogIn(values);
+      const loggedIn =  await checkLogIn(values);
       if (!loggedIn) {
         alert('Nick or password is incorrect')
       } else {
@@ -27,6 +27,7 @@ const LogInForm = ({ setShow }) => {
         resetForm({ vaules: formik.initialValues })
         setShow(false)
       }
+    
     }
   })
 

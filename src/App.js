@@ -10,9 +10,8 @@ import { getCampaigns } from './Redux/campaignsSlice';
 import { getGameMasters } from './Redux/gameMastersSlice';
 import Campaign from './Pages/Campaign/Campaign';
 import SignIn from './Pages/SignIn/SignIn';
-import { LogInProvider } from './Context/LogInContext';
-import { useEffect, useContext } from 'react';
-import {LogInContext} from './Context/LogInContext'
+import { useEffect } from 'react';
+
 function App() {
   const dispatch = useDispatch();
 
@@ -20,13 +19,10 @@ function App() {
     dispatch(getCampaigns())
     dispatch(getGameMasters())
   }, []);
-
-    // const [loginUser, setLogInUser] = useContext(LogInContext);
  
  
   return (
     <div className='wrapper'>
-      <LogInProvider>
         <Navigation />
         <Container fluid className='main-container'>
           <Routes>
@@ -37,7 +33,6 @@ function App() {
           </Routes>
         </Container>
           <Footer />
-      </LogInProvider>
     </div>
   );
 }

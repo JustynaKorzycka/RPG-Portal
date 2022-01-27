@@ -4,12 +4,16 @@
   .modal-title {
     width: 100%;
     font-size: 2rem;
-
   }
 }
 
 .modal-dialog {
   overflow: hidden;
+
+  .body-text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 
   .modal-footer {
     justify-content: center;

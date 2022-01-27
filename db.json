@@ -1,10 +1,13 @@
 {
-  "campaigns": [{
+  "campaigns": [
+    {
       "id": 1,
       "name": "Campania 1",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
       "playersNumber": 10,
-      "playersID": [],
+      "playersID": [
+        3
+      ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
       "image": "https://cdn.pixabay.com/photo/2018/12/04/17/58/lake-3856194_960_720.jpg"
@@ -14,7 +17,9 @@
       "name": "Campania 2",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
       "playersNumber": 10,
-      "playersID": [],
+      "playersID": [
+        3
+      ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
       "image": "https://cdn.pixabay.com/photo/2021/12/15/10/21/chess-6872239_960_720.jpg"
@@ -25,23 +30,15 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
       "playersNumber": 10,
       "playersID": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
+        3
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
-      "image": "https://cdn.pixabay.com/photo/2021/12/15/10/21/chess-6872239_960_720.jpg"
+      "image": "https://cdn.pixabay.com/photo/2018/12/04/17/58/lake-3856194_960_720.jpg"
     }
   ],
-  "users": [{
+  "users": [
+    {
       "id": 1,
       "nick": "Ramin",
       "avatar": "https://cdn.pixabay.com/photo/2013/07/13/13/32/demon-161049_960_720.png",
@@ -58,11 +55,41 @@
       "nick": "Player",
       "avatar": "https://cdn.pixabay.com/photo/2013/07/13/13/32/demon-161049_960_720.png",
       "userType": "player",
-      "userSaved": {}
+      "userSaved": {
+        "confirmedCamaigns": []
+      },
+      "email": "justyna.korzycka@gmail.com",
+      "password": "ala123"
     },
     {
       "id": 3,
       "nick": "justynaa",
+      "avatar": "",
+      "userType": "player",
+      "userSaved": {
+        "confirmedCamaigns": [
+          1,
+          2,
+          3
+        ]
+      },
+      "email": "justyna.korzycka@gmail.com",
+      "password": "ala123"
+    },
+    {
+      "id": 4,
+      "nick": "wdsdcdaaa",
+      "avatar": "",
+      "userType": "player",
+      "userSaved": {
+        "confirmedCamaigns": []
+      },
+      "email": "justyna.korzycka@gmail.com",
+      "password": "haslo"
+    },
+    {
+      "id": 5,
+      "nick": "justyna",
       "avatar": "",
       "userType": "player",
       "userSaved": {},

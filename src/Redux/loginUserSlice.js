@@ -1,7 +1,21 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 
-const initStateValue = {};
+const initStateValue = {user:{}, isLogged : false};
 
+export const updateUser = createAsyncThunk(
+  "user/updateUser",
+  async ({ id, values }) => {
+    return await fetch(`http://localhost:3000/users/${id}`, {
+      method: "PUT",
+      headers: {
+        Accept: 'application/json',
+        "Content-type": "application/json"
+      },
+       body: JSON.stringify(values)
+    })
+      .then((res) => res.json())
+  }
+)
 
 const loginUserSlice = createSlice({
   name: "user",
@@ -9,10 +23,17 @@ const loginUserSlice = createSlice({
   reducers: {
     loginSuccess: (state, action) => {
       state.user = action.payload;
-      console.log(state)
+      state.isLogged = true;
     },
     logoutSuccess: (state) => {
       state.user = {};
+      state.isLogged = false;
+    }
+  },
+  extraReducers: {
+    [updateUser.fulfilled]: (state, action) => {
+      console.log(action.payload)
+      state.user = {...action.payload};
     }
   }
   

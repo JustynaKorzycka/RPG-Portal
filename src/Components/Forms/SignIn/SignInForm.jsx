@@ -1,7 +1,7 @@
 
 import { Button, Form} from 'react-bootstrap';
 import { useFormik } from 'formik';
-import { addNewRecord } from '../Helpers/addNewRecord';
+import { addNewRecord } from '../../Helpers/addNewRecord';
 import InputField from '../Fields/InputField';
 import SelectField from '../Fields/SelectField';
 import { signInValidationSchema } from '../Validations/validationSchemes'
