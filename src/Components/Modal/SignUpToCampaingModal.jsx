@@ -19,7 +19,6 @@ const SignUpToCampaingModal = ({ campaign, user}) => {
       const allPlayers = campaign.playersID.concat([user.id])
       const newCampValue = { ...campaign };
       newCampValue.playersID = allPlayers;
-
       const allUserGames = user.userSaved.confirmedCamaigns.concat([campaign.id]);
       const newUserVales = { ...user };
       console.log(newUserVales)

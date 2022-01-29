@@ -27,7 +27,9 @@ const SignInForm = () => {
       nick: '',
       avatar: '',
       userType: '',
-      userSaved: {},
+      userSaved: {
+        "confirmedCamaigns": []
+      },
       email: '',
       password: ''
     },

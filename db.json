@@ -18,7 +18,8 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
       "playersNumber": 10,
       "playersID": [
-        3
+        3,
+        6
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
@@ -30,7 +31,8 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
       "playersNumber": 10,
       "playersID": [
-        3
+        3,
+        6
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
@@ -95,6 +97,20 @@
       "userSaved": {},
       "email": "justyna.korzycka@gmail.com",
       "password": "ala123"
+    },
+    {
+      "id": 6,
+      "nick": "justynaaa",
+      "avatar": "",
+      "userType": "player",
+      "userSaved": {
+        "confirmedCamaigns": [
+          2,
+          3
+        ]
+      },
+      "email": "justyna.korzycka@gmail.com",
+      "password": "qwerty"
     }
   ]
 }
