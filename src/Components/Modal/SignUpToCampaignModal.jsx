@@ -6,7 +6,7 @@ import { updateCampaigns } from '../../Redux/campaignsSlice';
 import { updateUser } from '../../Redux/loginUserSlice';
 
 
-const SignUpToCampaingModal = ({ campaign, user}) => {
+const SignUpToCampaignModal = ({ campaign, user}) => {
  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -40,7 +40,7 @@ const SignUpToCampaingModal = ({ campaign, user}) => {
           <Modal.Title>Sign up for the campaign </Modal.Title>
         </Modal.Header>
      <Modal.Body className='body-text'>
-          Are You sure You want to sign up to capmaing? 
+          Are You sure You want to sign up to campaign? 
         </Modal.Body>
         <Modal.Footer>
            <Button variant="primary" onClick={handleSubmit}>
@@ -59,4 +59,4 @@ const SignUpToCampaingModal = ({ campaign, user}) => {
     )
 };
 
-export default SignUpToCampaingModal;
+export default  SignUpToCampaignModal;

@@ -26,10 +26,8 @@ const SignInForm = () => {
       id: null,
       nick: '',
       avatar: '',
+      dashboardImage: '',
       userType: '',
-      userSaved: {
-        "confirmedCamaigns": []
-      },
       email: '',
       password: ''
     },
@@ -37,7 +35,7 @@ const SignInForm = () => {
     onSubmit: async(values, { resetForm }) => {
       const added = await addNewRecord(values, 'users', values.nick)
       if (added) {
-        resetForm({ vaules: formik.initialValues })
+        resetForm({ values: formik.initialValues })
         navigate('/');
         alert('You have registered successfully. You can login now :) ')
        

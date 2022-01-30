@@ -24,7 +24,7 @@ const LogInForm = ({ setShow }) => {
         alert('Nick or password is incorrect')
       } else {
         dispatch(loginSuccess(loggedIn[0]));
-        resetForm({ vaules: formik.initialValues })
+        resetForm({ values: formik.initialValues })
         setShow(false)
       }
     

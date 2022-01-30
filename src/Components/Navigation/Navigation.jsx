@@ -5,14 +5,12 @@ import LoginModal from '../Modal/LoginModal';
 import { useSelector } from 'react-redux';
 import ButtonLogout from './ButtonLogout';
 
+const Navigation = ({ isDark }) => {
 
-const Navigation = () => {
+   const { isLogged, user } = useSelector(state => ({ ...state.user }))
   
-  const user = useSelector(state => state.user);
-
-
   return (
-     <Navbar expand="sm" id='nav' variant='dark'>
+     <Navbar expand="sm" id='nav' variant='dark'  className={ isDark && 'dark' }>
         <Container>
           <Link className='navbar-brand' to='/'>Logo</Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,16 +18,12 @@ const Navigation = () => {
             <Nav>
               <Link className='nav-link' to="/">Home</Link>
               <Link className='nav-link' to="campaigns">Campaigns</Link>   
-            { !user.isLogged ? <LoginModal />:  <ButtonLogout/>}
-        
+              {isLogged && <Link className='nav-link' to={`dashboard${user.id}`}> Dashboard </Link>}
+              {!isLogged ? <LoginModal /> : <ButtonLogout />}
             </Nav>
           </Navbar.Collapse>
       </Container>
-     
     </Navbar>
-    
-
-    
   )
 }
 

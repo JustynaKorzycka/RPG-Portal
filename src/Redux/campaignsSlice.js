@@ -26,7 +26,7 @@ export const updateCampaigns = createAsyncThunk(
 )
 
  const campaignsSlice = createSlice({
-  name: "campaings",
+  name: "campaigns",
    initialState: initStateValue,
   extraReducers: {
     [getCampaigns.pending]: (state) => {

@@ -3,6 +3,8 @@
 .footer {
   min-height: 80px;
   color: $lightText;
+  display: flex;
+  flex-direction: column;
 
   .divider {
     height: 2px;
@@ -11,4 +13,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer-content {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    align-items: center;
+
+    p {
+      opacity: .7;
+
+    }
+  }
+
 }

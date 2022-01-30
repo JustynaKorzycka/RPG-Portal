@@ -4,10 +4,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $backgroundCol2;
   width: 100%;
   min-height: 60px;
   z-index: 1000;
+
+  &.dark {
+    background-color: $backgroundCol2;
+  }
 
 
   .navbar-brand {

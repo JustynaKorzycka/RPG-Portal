@@ -8,13 +8,15 @@ import './Campaigns.scss'
 
 const Campaigns = () => {
 
-  const { campaigns, status } = useSelector(state => ({ ...state.campaigns }));
+  const { campaigns } = useSelector(state => ({ ...state.campaigns }));
+  const { status } = useSelector(state => ({ ...state.gameMasters }));
+
   
   return (
     <>
     <Header title='All Campaigns' image={ headerImg } />
       <Container>
-        {status === 'loading' ? 'loading....' :  <div className='campaigns-cards'> {campaigns.map(campaign => <CampaignCard campaign={campaign} key={ campaign.id }/>)}</div>}      
+        {status !== 'success' ? 'loading....' :  <div className='campaigns-cards'> {campaigns.map(campaign => <CampaignCard campaign={campaign} key={ campaign.id }/>)}</div>}      
     </Container>
     </>
   )

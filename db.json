@@ -10,7 +10,7 @@
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
-      "image": "https://cdn.pixabay.com/photo/2018/12/04/17/58/lake-3856194_960_720.jpg"
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1a95c8de-d75a-4f26-a2e2-54278e5f8277/deghq3j-24bf76d3-59d5-4bda-b2fb-025f0469f948.jpg/v1/fill/w_1024,h_604,q_75,strp/spell_by_gaeaia_deghq3j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvMWE5NWM4ZGUtZDc1YS00ZjI2LWEyZTItNTQyNzhlNWY4Mjc3XC9kZWdocTNqLTI0YmY3NmQzLTU5ZDUtNGJkYS1iMmZiLTAyNWYwNDY5Zjk0OC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CIZmNX2wLngXznfFqA-ldM_PE7Ap2laMo8tCjB7LWbU"
     },
     {
       "id": 2,
@@ -23,7 +23,7 @@
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
-      "image": "https://cdn.pixabay.com/photo/2021/12/15/10/21/chess-6872239_960_720.jpg"
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d079e1f-386b-4bd0-84fc-cce9913fbc0c/de5iwka-fbe5a129-959f-409e-a65f-8b18ffb7ced1.jpg/v1/fill/w_1024,h_576,q_75,strp/khamul___lotr___by_anatofinnstark_de5iwka-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvM2QwNzllMWYtMzg2Yi00YmQwLTg0ZmMtY2NlOTkxM2ZiYzBjXC9kZTVpd2thLWZiZTVhMTI5LTk1OWYtNDA5ZS1hNjVmLThiMThmZmI3Y2VkMS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.2cBNM6yBELi6Rlyb0E5of2de9f-jS_3ZlS9dl7IJnp8"
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
-      "image": "https://cdn.pixabay.com/photo/2018/12/04/17/58/lake-3856194_960_720.jpg"
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9bdaffc6-05f7-4f47-bb9a-0a18b7e16bb5/ddfprj4-f7df0ca8-f037-4636-9448-bcfa376ebc9e.png/v1/fill/w_1264,h_632,strp/_au__against_the_tide_by_lidiash_ddfprj4-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvOWJkYWZmYzYtMDVmNy00ZjQ3LWJiOWEtMGExOGI3ZTE2YmI1XC9kZGZwcmo0LWY3ZGYwY2E4LWYwMzctNDYzNi05NDQ4LWJjZmEzNzZlYmM5ZS5wbmciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gOJfGgh782eqIekpFy11B0jjvu1o7RWOH8JLv_gI3pI"
     }
   ],
   "users": [
@@ -44,6 +44,7 @@
       "id": 1,
       "nick": "Ramin",
       "avatar": "https://cdn.pixabay.com/photo/2013/07/13/13/32/demon-161049_960_720.png",
+      "dashboardImage": "",
       "userType": "gameMaster",
       "userSaved": {
         "createdCampaigns": [
@@ -56,6 +57,7 @@
       "id": 2,
       "nick": "Player",
       "avatar": "https://cdn.pixabay.com/photo/2013/07/13/13/32/demon-161049_960_720.png",
+      "dashboardImage": "",
       "userType": "player",
       "userSaved": {
         "confirmedCamaigns": []
@@ -67,6 +69,7 @@
       "id": 3,
       "nick": "justynaa",
       "avatar": "",
+      "dashboardImage": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf189e7e-b36d-4d08-a410-2cad87c860a9/degyv0e-528b0164-b683-468a-9ec6-67e5e311d170.jpg/v1/fill/w_1095,h_730,q_70,strp/into_the_deep_by_simonjody_degyv0e-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvY2YxODllN2UtYjM2ZC00ZDA4LWE0MTAtMmNhZDg3Yzg2MGE5XC9kZWd5djBlLTUyOGIwMTY0LWI2ODMtNDY4YS05ZWM2LTY3ZTVlMzExZDE3MC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.unOnVdc2T1ayjTBm0fYp7mTsods95Gxa87c0BmeE3nU",
       "userType": "player",
       "userSaved": {
         "confirmedCamaigns": [
@@ -82,6 +85,7 @@
       "id": 4,
       "nick": "wdsdcdaaa",
       "avatar": "",
+      "dashboardImage": "",
       "userType": "player",
       "userSaved": {
         "confirmedCamaigns": []
@@ -93,6 +97,7 @@
       "id": 5,
       "nick": "justyna",
       "avatar": "",
+      "dashboardImage": "",
       "userType": "player",
       "userSaved": {},
       "email": "justyna.korzycka@gmail.com",
@@ -102,6 +107,7 @@
       "id": 6,
       "nick": "justynaaa",
       "avatar": "",
+      "dashboardImage": "",
       "userType": "player",
       "userSaved": {
         "confirmedCamaigns": [
@@ -111,6 +117,65 @@
       },
       "email": "justyna.korzycka@gmail.com",
       "password": "qwerty"
+    },
+    {
+      "id": 7,
+      "nick": "Player22",
+      "avatar": "",
+      "userType": "player",
+      "userSaved": {
+        "confirmedCamaigns": []
+      },
+      "email": "justyna.korzycka@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 8,
+      "nick": "player333",
+      "avatar": "",
+      "dashboardImage": "",
+      "userType": "gameMaster",
+      "email": "justyna.korzycka@gmail.com",
+      "password": "wwww",
+      "userSaved": {
+        "createdCampaigns": []
+      }
+    },
+    {
+      "id": 9,
+      "nick": "qqqq",
+      "avatar": "",
+      "dashboardImage": "",
+      "userType": "player",
+      "email": "justyna.korzycka@gmail.com",
+      "password": "qqqq",
+      "userSaved": {
+        "confirmedCamaigns": []
+      }
+    },
+    {
+      "id": 10,
+      "nick": "justys",
+      "avatar": "",
+      "dashboardImage": "",
+      "userType": "player",
+      "email": "justyna.korzycka@gmail.com",
+      "password": "ala123",
+      "userSaved": {
+        "confirmedCamaigns": []
+      }
+    },
+    {
+      "id": 11,
+      "nick": "ala123",
+      "avatar": "",
+      "dashboardImage": "",
+      "userType": "player",
+      "email": "justyna.korzycka@gmail.com",
+      "password": "ala123",
+      "userSaved": {
+        "confirmedCamaigns": []
+      }
     }
   ]
 }
