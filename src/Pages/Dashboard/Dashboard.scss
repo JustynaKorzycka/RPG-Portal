@@ -1,0 +1,73 @@
+@import '../../Styles/variables';
+
+.post.dashboard {
+  .container {
+    padding: 0;
+    max-width: 940px;
+
+    .row {
+      min-height: 50vh;
+
+      .tabs-nav {
+
+        background-color: black;
+
+        .nav-link {
+          font-size: 1.8rem;
+          color: $lightText;
+          padding: 1.2rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.active {
+            background-color: $secAccent;
+          }
+        }
+
+
+      }
+
+      .tab-content {
+        font-size: 1.8rem;
+        padding: 3rem 1.5rem;
+
+
+        h2 {
+          text-align: center;
+        }
+
+        .user-data {
+          margin-top: 4.5rem;
+
+          &>div {
+            display: flex;
+            padding-bottom: 1.5rem;
+            align-items: center;
+
+            h5 {
+              flex-basis: 25%;
+              font-weight: 600;
+            }
+
+            img.avatar {
+              max-width: 50px;
+              border-radius: 50%;
+            }
+
+            img.header {
+              max-width: 200px;
+              object-fit: cover;
+            }
+          }
+
+          &>div>*:nth-child(2) {
+            flex-basis: 50%;
+          }
+        }
+      }
+    }
+
+  }
+}

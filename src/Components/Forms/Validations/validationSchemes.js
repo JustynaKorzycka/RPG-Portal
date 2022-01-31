@@ -12,3 +12,11 @@ export const logInValidationSchema = yup.object().shape({
     nick: yup.string().min(4, "User name must be at least 4 characters long (ex. John)").required('This field is required'),
     password: yup.string().required()
 })
+
+export const avatarUpdateInValidationSchema = yup.object().shape({
+    avatar: yup.string().url('Enter correct url address (ex: https://cdn.pixabay.com/picture.jpg')
+})
+
+export const headerImgUpdateInValidationSchema = yup.object().shape({
+    dashboardImage: yup.string().url('Enter correct url address (ex: https://cdn.pixabay.com/picture.jpg')
+})

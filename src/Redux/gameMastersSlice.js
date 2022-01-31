@@ -10,6 +10,21 @@ export const getGameMasters = createAsyncThunk(
   }
 )
 
+export const updateGameMasters = createAsyncThunk(
+  "gameMasters/updateGameMasters",
+  async ({id, values}) => {
+    return await fetch(`http://localhost:3000/users/${id}`, {
+      method: "PUT",
+      headers: {
+        Accept: 'application/json',
+        "Content-type": "application/json"
+      },
+       body: JSON.stringify(values)
+    })
+      .then((res) => res.json())
+  }
+)
+
 const gameMastersSlice = createSlice({
   name: "gameMasters",
   initialState: initStateValue ,
@@ -23,7 +38,21 @@ const gameMastersSlice = createSlice({
     },
     [getGameMasters.rejected]: (state) => {
       state.status = 'failed'
-    }
+    },
+    [updateGameMasters.pending]: (state) => {
+      state.status = 'loading'
+    },
+    [updateGameMasters.fulfilled]: (state, action) => {
+      state.status = 'success';
+      const index = state.gameMasters.findIndex(gameMasters => gameMasters.id === action.payload.id);
+      state.gameMasters[index] = {
+        ...state.gameMasters[index],
+        ...action.payload
+      }
+    },
+    [updateGameMasters.rejected]: (state) => {
+      state.status = 'failed'
+    },
   }
 });
 

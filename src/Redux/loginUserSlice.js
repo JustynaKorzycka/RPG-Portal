@@ -32,7 +32,6 @@ const loginUserSlice = createSlice({
   },
   extraReducers: {
     [updateUser.fulfilled]: (state, action) => {
-      console.log(action.payload)
       state.user = {...action.payload};
     }
   }
