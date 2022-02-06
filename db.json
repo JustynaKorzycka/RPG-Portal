@@ -6,7 +6,8 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
       "playersNumber": 10,
       "playersID": [
-        3
+        3,
+        14
       ],
       "gameMasterId": 1,
       "startDate": "22/03/2022",
@@ -44,7 +45,7 @@
     {
       "id": 1,
       "nick": "Ramin",
-      "avatar": "https://cdn.pixabay.com/photo/2022/01/27/07/50/woman-6971424_960_720.jpg",
+      "avatar": "https://cdn.pixabay.com/photo/2022/02/04/13/44/chicken-6992752_960_720.jpg",
       "dashboardImage": "https://cdn.pixabay.com/photo/2022/01/16/10/51/leaves-6941709_960_720.jpg",
       "userType": "gameMaster",
       "userSaved": {
@@ -203,6 +204,20 @@
       "userSaved": {
         "confirmedCamaigns": [
           2
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "nick": "Raminn",
+      "avatar": "",
+      "dashboardImage": "",
+      "userType": "player",
+      "email": "justyna.korzycka@gmail.com",
+      "password": "Qwerty12345%",
+      "userSaved": {
+        "confirmedCamaigns": [
+          1
         ]
       }
     }

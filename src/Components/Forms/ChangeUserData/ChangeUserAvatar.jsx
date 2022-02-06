@@ -2,13 +2,16 @@ import { useFormik } from 'formik';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
+import { changeGameMasterAvatar } from '../../../Redux/gameMastersSlice';
 import { updateUser } from '../../../Redux/loginUserSlice';
 import InputField from '../Fields/InputField';
 import { avatarUpdateInValidationSchema } from '../Validations/validationSchemes';
 
 const ChangeUserAvatar = ({ setShow }) => {
 
-  const { user } = useSelector(state => ({ ...state.user })) 
+  const { user } = useSelector(state => ({ ...state.user }))
+  const { gameMasters } = useSelector(state => ({ ...state.gameMasters })) 
+  
   const dispatch = useDispatch();
 
   const formik = useFormik({
@@ -20,8 +23,11 @@ const ChangeUserAvatar = ({ setShow }) => {
       resetForm({ values: formik.initialValues })
       setShow(false)
       const newValues = { ...user };
-      newValues.avatar = values.avatar
+      newValues.avatar = values.avatar;
       dispatch(updateUser({ id: user.id, values: newValues }))
+      if (user.userType === 'gameMaster') {
+        dispatch(changeGameMasterAvatar({ id: user.id, avatar: values.avatar }))
+      }
     }
   })
 

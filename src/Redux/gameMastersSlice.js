@@ -5,58 +5,48 @@ const initStateValue = { gameMasters: [], status: null };
 export const getGameMasters = createAsyncThunk(
   "gameMasters/getGameMasters",
   async () => {
-    return await fetch('http://localhost:3000/users')
-    .then((res)=>res.json())
-  }
-)
-
-export const updateGameMasters = createAsyncThunk(
-  "gameMasters/updateGameMasters",
-  async ({id, values}) => {
-    return await fetch(`http://localhost:3000/users/${id}`, {
-      method: "PUT",
-      headers: {
-        Accept: 'application/json',
-        "Content-type": "application/json"
-      },
-       body: JSON.stringify(values)
-    })
+    return await fetch('http://localhost:3000/users?userType=gameMaster')
       .then((res) => res.json())
   }
 )
 
 const gameMastersSlice = createSlice({
   name: "gameMasters",
-  initialState: initStateValue ,
+  initialState: initStateValue,
+  reducers: {
+    changeGameMasterAvatar: (state, action) => {
+      const index = state.gameMasters.findIndex(gameMasters => gameMasters.id === action.payload.id);
+      state.gameMasters[index] = {
+        ...state.gameMasters[index],
+        avatar: action.payload.avatar
+      }
+    }
+  },
   extraReducers: {
     [getGameMasters.pending]: (state) => {
       state.status = 'loading'
     },
     [getGameMasters.fulfilled]: (state, action) => {
       state.status = 'success';
-      state.gameMasters = action.payload
+      const gameMasterData = action.payload.map(item => {
+        const newItem = {
+          id: item.id,
+          nick: item.nick,
+          avatar: item.avatar,
+          userSaved: item.userSaved
+        }
+        return newItem;
+      })
+      state.gameMasters = gameMasterData
     },
     [getGameMasters.rejected]: (state) => {
-      state.status = 'failed'
-    },
-    [updateGameMasters.pending]: (state) => {
-      state.status = 'loading'
-    },
-    [updateGameMasters.fulfilled]: (state, action) => {
-      state.status = 'success';
-      const index = state.gameMasters.findIndex(gameMasters => gameMasters.id === action.payload.id);
-      state.gameMasters[index] = {
-        ...state.gameMasters[index],
-        ...action.payload
-      }
-    },
-    [updateGameMasters.rejected]: (state) => {
       state.status = 'failed'
     },
   }
 });
 
 
-export const selectGameMasters = state=>state.gameMasters;
+export const selectGameMasters = state => state.gameMasters;
+export const { changeGameMasterAvatar } = gameMastersSlice.actions;
 
 export default gameMastersSlice.reducer;
