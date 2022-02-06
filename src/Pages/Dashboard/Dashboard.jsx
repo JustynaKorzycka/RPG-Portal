@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import Header from '../../Components/Header/Header';
 import AccountData from './AccountData';
 import ChangePassword from './ChangePassword';
+import CreateCampaign from './CreateCampaign';
 import './Dashboard.scss'
 
 
@@ -25,11 +26,11 @@ const Dashboard = () => {
                   <Nav.Link eventKey="password">Change password</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="imgHeader">Header image</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
                   {user.userType === 'player' && <Nav.Link eventKey="confirmedCampaigns">Confirmed campaigns</Nav.Link>}
                   {user.userType === 'gameMaster' && <Nav.Link eventKey="masterCampaigns">Your campaigns</Nav.Link>}
+                </Nav.Item>
+                <Nav.Item>
+                  {user.userType === 'gameMaster' && <Nav.Link eventKey="createCampaing">Create campaing</Nav.Link>}
                 </Nav.Item>
               </Nav>
             </Col>
@@ -41,14 +42,14 @@ const Dashboard = () => {
                 <Tab.Pane eventKey="password">
                  <ChangePassword />
                 </Tab.Pane>
-                 <Tab.Pane eventKey="imgHeader">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti pariatur aut eius blanditiis dolore atque possimus alias asperiores. Dignissimos, neque alias? Dolores officia porro, sit maxime cupiditate laudantium soluta, ab ad nisi earum modi non atque esse facilis minima nemo inventore facere cum optio a quae. Deserunt dolore a sequi.
-                </Tab.Pane>
                  <Tab.Pane eventKey="confirmedCampaigns">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti pariatur aut eius blanditiis dolore atque possimus alias asperiores. Dignissimos, neque alias? Dolores officia porro, sit maxime cupiditate laudantium soluta, ab ad nisi earum modi non atque esse facilis minima nemo inventore facere cum optio a quae. Deserunt dolore a sequi.
                 </Tab.Pane>
                  <Tab.Pane eventKey="masterCampaigns">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti pariatur aut eius blanditiis dolore atque possimus alias asperiores. Dignissimos, neque alias? Dolores officia porro, sit maxime cupiditate laudantium soluta, ab ad nisi earum modi non atque esse facilis minima nemo inventore facere cum optio a quae. Deserunt dolore a sequi.
+                </Tab.Pane>
+                 <Tab.Pane eventKey="createCampaing">
+                  <CreateCampaign />
                 </Tab.Pane>
               </Tab.Content>
             </Col>

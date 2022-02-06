@@ -1,6 +1,5 @@
 {
-  "campaigns": [
-    {
+  "campaigns": [{
       "id": 1,
       "name": "Campania 1",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicula feugiat. Vestibulum sit amet nibh nec massa gravida tempus. Integer efficitur tortor eu ex sollicitudin fringilla. Phasellus et feugiat velit, ut dignissim eros. Suspendisse potenti. Sed eget eros id lectus porta vulputate sit amet a felis. Donec facilisis eros urna, ut semper orci sodales at.",
@@ -39,10 +38,19 @@
       "gameMasterId": 1,
       "startDate": "22/03/2022",
       "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9bdaffc6-05f7-4f47-bb9a-0a18b7e16bb5/ddfprj4-f7df0ca8-f037-4636-9448-bcfa376ebc9e.png/v1/fill/w_1264,h_632,strp/_au__against_the_tide_by_lidiash_ddfprj4-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvOWJkYWZmYzYtMDVmNy00ZjQ3LWJiOWEtMGExOGI3ZTE2YmI1XC9kZGZwcmo0LWY3ZGYwY2E4LWYwMzctNDYzNi05NDQ4LWJjZmEzNzZlYmM5ZS5wbmciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gOJfGgh782eqIekpFy11B0jjvu1o7RWOH8JLv_gI3pI"
+    },
+    {
+      "id": 7,
+      "name": "Campaing 222",
+      "desc": "tis sed velit ac accumsan. Aenean maximus mattis libero quis porta. Morbi ac metus scelerisque, congue felis id, convallis quam. Nulla convallis vehicul",
+      "playersNumber": 17,
+      "playersID": [],
+      "gameMasterId": 1,
+      "image": "https://cdn.pixabay.com/photo/2021/07/11/10/39/fantasy-6403406_960_720.jpg",
+      "startDate": ""
     }
   ],
-  "users": [
-    {
+  "users": [{
       "id": 1,
       "nick": "Ramin",
       "avatar": "https://cdn.pixabay.com/photo/2022/02/04/13/44/chicken-6992752_960_720.jpg",
@@ -64,7 +72,9 @@
       "dashboardImage": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf189e7e-b36d-4d08-a410-2cad87c860a9/degyv0e-528b0164-b683-468a-9ec6-67e5e311d170.jpg/v1/fill/w_1095,h_730,q_70,strp/into_the_deep_by_simonjody_degyv0e-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvY2YxODllN2UtYjM2ZC00ZDA4LWE0MTAtMmNhZDg3Yzg2MGE5XC9kZWd5djBlLTUyOGIwMTY0LWI2ODMtNDY4YS05ZWM2LTY3ZTVlMzExZDE3MC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.unOnVdc2T1ayjTBm0fYp7mTsods95Gxa87c0BmeE3nU",
       "userType": "player",
       "userSaved": {
-        "confirmedCamaigns": []
+        "confirmedCamaigns": [
+          10
+        ]
       },
       "email": "justyna.korzycka@gmail.com",
       "password": "ala123"
@@ -106,120 +116,6 @@
       "userSaved": {},
       "email": "justyna.korzycka@gmail.com",
       "password": "ala123"
-    },
-    {
-      "id": 6,
-      "nick": "justynaaa",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "player",
-      "userSaved": {
-        "confirmedCamaigns": [
-          2,
-          3
-        ]
-      },
-      "email": "justyna.korzycka@gmail.com",
-      "password": "qwerty"
-    },
-    {
-      "id": 7,
-      "nick": "Player22",
-      "avatar": "",
-      "userType": "player",
-      "userSaved": {
-        "confirmedCamaigns": []
-      },
-      "email": "justyna.korzycka@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": 8,
-      "nick": "player333",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "gameMaster",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "wwww",
-      "userSaved": {
-        "createdCampaigns": []
-      }
-    },
-    {
-      "id": 9,
-      "nick": "qqqq",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "player",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "qqqq",
-      "userSaved": {
-        "confirmedCamaigns": []
-      }
-    },
-    {
-      "id": 10,
-      "nick": "justys",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "player",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "ala123",
-      "userSaved": {
-        "confirmedCamaigns": []
-      }
-    },
-    {
-      "id": 11,
-      "nick": "ala123",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "player",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "ala123",
-      "userSaved": {
-        "confirmedCamaigns": []
-      }
-    },
-    {
-      "id": 12,
-      "nick": "Lukasz",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "gameMaster",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "123",
-      "userSaved": {
-        "createdCampaigns": []
-      }
-    },
-    {
-      "id": 13,
-      "nick": "Player10",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "player",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "123",
-      "userSaved": {
-        "confirmedCamaigns": [
-          2
-        ]
-      }
-    },
-    {
-      "id": 14,
-      "nick": "Raminn",
-      "avatar": "",
-      "dashboardImage": "",
-      "userType": "player",
-      "email": "justyna.korzycka@gmail.com",
-      "password": "Qwerty12345%",
-      "userSaved": {
-        "confirmedCamaigns": [
-          1
-        ]
-      }
     }
   ]
 }

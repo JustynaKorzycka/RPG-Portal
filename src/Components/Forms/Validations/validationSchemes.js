@@ -28,3 +28,11 @@ export const passwordChangeValidationSchema = yup.object().shape({
     passwordConfirmation: yup.string()
      .oneOf([yup.ref('password'), null], 'Passwords must match').required()
 })
+
+export const createCampaignValidationSchema = yup.object().shape({
+    name: yup.string().min(5, "Campaign title must be at least 5 characters long").required(),
+    desc: yup.string().min(20, "Campaign description must be at least 20 characters long").required(),
+    playersNumber: yup.number().min(2, 'The minimum number of players is 2').required(),
+    image: yup.string().url('Enter correct url address (ex: https://cdn.pixabay.com/picture.jpg').required(),
+    
+})

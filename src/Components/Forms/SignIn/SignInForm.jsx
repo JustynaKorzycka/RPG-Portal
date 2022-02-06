@@ -35,7 +35,6 @@ const SignInForm = () => {
         resetForm({ values: formik.initialValues })
         navigate('/');
         alert('You have registered successfully. You can login now :) ')
-       
       }
       else {
        alert('This nickname is already taken') 

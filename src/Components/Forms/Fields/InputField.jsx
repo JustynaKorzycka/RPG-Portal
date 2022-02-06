@@ -5,15 +5,25 @@ const InputField = ({ formik, label, fieldType, fieldName, fieldPlaceholder }) =
   return <FormGroup  controlId={`form${fieldName}`}>
     <Row>
     <Form.Label column> {label} </Form.Label>
-     <Col>
-        <Form.Control
+      <Col>
+        { fieldType ===  "textarea" ? <Form.Control
+          as='textarea'
+          row = {3}
+          name= { fieldName }
+          placeholder= { fieldPlaceholder }
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={ formik.values[fieldName] }
+        /> : <Form.Control
           type={ fieldType }
           name= { fieldName }
           placeholder= { fieldPlaceholder }
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={ formik.values[fieldName] }
-      />
+      />}
+       
+        
       </Col>
       </Row>
          <Form.Text className="text-danger" >

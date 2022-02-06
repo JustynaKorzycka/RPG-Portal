@@ -25,9 +25,16 @@ export const updateCampaigns = createAsyncThunk(
   }
 )
 
+
  const campaignsSlice = createSlice({
   name: "campaigns",
    initialState: initStateValue,
+   reducers: {
+     addCampaign: (state, action) => {
+       action.payload.id = state.campaigns[state.campaigns.length - 1].id + 1;
+       state.campaigns = [...state.campaigns, action.payload]
+    }
+   },
   extraReducers: {
     [getCampaigns.pending]: (state) => {
       state.status = 'loading'
@@ -58,5 +65,6 @@ export const updateCampaigns = createAsyncThunk(
 });
 
 
+export const { addCampaign } = campaignsSlice.actions;
 
 export default campaignsSlice.reducer;

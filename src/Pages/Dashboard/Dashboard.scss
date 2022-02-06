@@ -31,10 +31,12 @@
         padding: 3rem 1.5rem;
 
 
+
         .tab-pane.active {
           min-height: 50vh;
           display: flex;
           flex-direction: column;
+          overflow: hidden;
 
           h2 {
             text-align: center;
