@@ -14,7 +14,7 @@ const AccountData = ({ user }) => {
         </div> 
       
       <div><h5>User image: </h5> <div><img className='header' src={user.dashboardImage} alt='header' /></div>
-      <ChangeUserDataModal  valueToChange='dashboardImage'/>
+      <ChangeUserDataModal  valueToChange='image'/>
       </div>
       
       

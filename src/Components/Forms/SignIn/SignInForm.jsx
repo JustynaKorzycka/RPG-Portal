@@ -8,9 +8,6 @@ import { signInValidationSchema } from '../Validations/validationSchemes'
 import '../../../Styles/forms.scss'
 import { useNavigate } from 'react-router-dom';
 
-
-
-
 const SignInForm = () => {
   const navigate = useNavigate();
   const options = [{

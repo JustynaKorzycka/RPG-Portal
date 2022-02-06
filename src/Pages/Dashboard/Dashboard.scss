@@ -5,9 +5,7 @@
     padding: 0;
     max-width: 940px;
 
-    .row {
-      min-height: 50vh;
-
+    &>.row {
       .tabs-nav {
 
         background-color: black;
@@ -25,46 +23,76 @@
             background-color: $secAccent;
           }
         }
-
-
       }
 
       .tab-content {
+
         font-size: 1.8rem;
         padding: 3rem 1.5rem;
 
 
-        h2 {
-          text-align: center;
-        }
+        .tab-pane.active {
+          min-height: 50vh;
+          display: flex;
+          flex-direction: column;
 
-        .user-data {
-          margin-top: 4.5rem;
+          h2 {
+            text-align: center;
 
-          &>div {
+          }
+
+          form {
+            flex-grow: 1;
             display: flex;
-            padding-bottom: 1.5rem;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
 
-            h5 {
-              flex-basis: 25%;
-              font-weight: 600;
+            .row {
+              margin-bottom: 1rem;
             }
 
-            img.avatar {
-              max-width: 50px;
-              border-radius: 50%;
+            label {
+              max-width: 150px;
             }
 
-            img.header {
-              max-width: 200px;
-              object-fit: cover;
+            input {
+              font-size: 1.6rem;
             }
           }
 
-          &>div>*:nth-child(2) {
-            flex-basis: 50%;
+          .user-data {
+            margin-top: 4.5rem;
+
+            &>div {
+              display: flex;
+              padding-bottom: 1.5rem;
+              align-items: center;
+
+              h5 {
+                flex-basis: 25%;
+                font-weight: 600;
+              }
+
+              img.avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+
+              img.header {
+                max-width: 200px;
+                object-fit: cover;
+              }
+            }
+
+            &>div>*:nth-child(2) {
+              flex-basis: 50%;
+            }
           }
+
+
+
         }
       }
     }

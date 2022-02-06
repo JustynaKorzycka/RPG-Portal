@@ -18,7 +18,7 @@ const ChangeUserDataModal = ({ valueToChange }) => {
         </Modal.Header>
         <Modal.Body>
           {valueToChange === 'avatar' && <ChangeUserAvatar setShow={setShow} />}
-          {valueToChange === 'dashboardImage' && <ChangeUserHeaderImg setShow={setShow} />}
+          {valueToChange === 'image' && <ChangeUserHeaderImg setShow={setShow} />}
 
         
         </Modal.Body>

@@ -5,7 +5,8 @@ export const signInValidationSchema = yup.object().shape({
     email: yup.string().email('Enter a valid email address (ex. mail@gmail.com).').required('This field is required'),
     userType: yup.string().required('This field is required'),
     avatar: yup.string().url('Enter correct url address (ex: https://cdn.pixabay.com/picture.jpg'),
-    password: yup.string().required()
+    password: yup.string().required().matches(
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,"Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character")
 })
   
 export const logInValidationSchema = yup.object().shape({
@@ -19,4 +20,11 @@ export const avatarUpdateInValidationSchema = yup.object().shape({
 
 export const headerImgUpdateInValidationSchema = yup.object().shape({
     dashboardImage: yup.string().url('Enter correct url address (ex: https://cdn.pixabay.com/picture.jpg')
+})
+
+export const passwordChangeValidationSchema = yup.object().shape({
+    password: yup.string().required().matches(
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,"Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"),
+    passwordConfirmation: yup.string()
+     .oneOf([yup.ref('password'), null], 'Passwords must match').required()
 })
